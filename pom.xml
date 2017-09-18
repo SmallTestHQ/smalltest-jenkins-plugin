@@ -6,12 +6,12 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.2</version>
+    <version>2.11</version>
     <relativePath />
   </parent>
   <groupId>com.smalltest</groupId>
   <artifactId>smalltest</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.2-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <properties>
@@ -48,13 +48,13 @@
     </developer>
   </developers>
 
-  <!-- Assuming you want to host on @jenkinsci:
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <tag>HEAD</tag>
   </scm>
-   -->
+
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
@@ -106,9 +106,4 @@
       </plugin>
     </plugins>
   </build>
-
-
-  <scm>
-    <tag>smalltest-1.0.0</tag>
-  </scm>
 </project>
